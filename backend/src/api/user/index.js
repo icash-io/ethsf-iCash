@@ -7,6 +7,9 @@ import * as auth from '../../auth/auth.service';
 var router = new Router();
 
 router.post('/', controller.createUser);
+router.get('/hello',  (req,res) => {
+  res.json({'hello':'world'})
+})
 // router.put('/', auth.isAuthenticated(), controller.updateUser); 
 router.get('/', auth.isAuthenticated(), controller.me); 
 
