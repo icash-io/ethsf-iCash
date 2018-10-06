@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const createDbManager = require('manage-database');
-const seqDbConf = require('./src/db/config/config.json');
+const seqDbConf = require('./backend/src/db/config/config.json');
 
 // Determine NODE_ENV
 let env = 'development';
